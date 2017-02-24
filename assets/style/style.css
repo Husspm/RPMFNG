@@ -1,6 +1,71 @@
 body {
-	background-color: silver;
+	background-image: url("../images/block7.png");
+	background-size: 60px;
 }
 .arena {
 	background-color: white;
+	margin: 10px auto
+}
+.btn:hover, .btn:focus{
+	border: 2px solid white;
+	color: #36ff00;
+}
+.btn:active {
+	background-image: url("../images/line.png"), url("../images/block7.png");	
+	color: white;
+	box-shadow: 0 0 0 5px red;
+}
+.bar {
+	background-image: url("../images/line.png"), url("../images/block7.png");
+	background-size: contain;
+	border: 6px solid #36ff00;
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+}
+.bar2 {
+	background-image: url("../images/block5.png");
+	background-size: contain;
+	border: 6px solid #36ff00;
+	margin: 10px auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+}
+.options {
+	background-image: url("../images/block5.png");
+	background-size: inherit;
+	padding: 10px 10px;
+	border: 6px solid #36ff00;
+}
+.player {
+	margin: 10px 10px;
+	box-shadow: 0 0 0 6px #36ff00;
+	background-image: url("../images/block7.png");
+	background-size: inherit;
+	font-size: 40px;
+	padding: 5px 5px;
+	color: white;
+	text-shadow: 1px 1px 4px green; 
+	border: 6px solid white;
+}
+.operators {
+	background-image: url("../images/block7.png");
+	background-size: contain;
+	font-size: 40px;
+	color: white;
+	box-shadow: 0 0 0 6px #36ff00;
+	border: 6px solid white;
+}
+.spot {
+	margin: 10px 10px;
+	width: 45%;
+	float: left;
+	font-size: 30px;
+}
+.spot2 {
+	margin:10px 10px;
+	width: 45%;
+	float: right;
+	font-size: 30px;
 }
