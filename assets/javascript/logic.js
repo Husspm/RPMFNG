@@ -60,10 +60,12 @@ $("#creator").on("click", function(){
 	locked = false;
 	playerLock = false;
 	opponentLock = false;
+	$("#style-change").attr("href", "assets/style/style2.css");
 });
 $("#select").on("click", function (){
 if (playerLock === false){
 playerLock = true;
+$("#style-change").attr("href", "assets/style/style.css");
 $(".name").html(player.one.name + "<hr>");
 a = player.one.health;
 c = player.one.attack;
