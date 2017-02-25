@@ -13,7 +13,7 @@ var oCritMultiply = 0;
 var player = { "one": {name: "Memory", attack: 10, defend: 8, health:180, multiply: 3},
 				 "two": {name:"Resistor", attack:13, defend:4, health: 130, multiply: 3},
 				 "three": {name:"Capacitor", attack:8, defend: 6, health: 230, multiply: 1.5},
-				 "four": {name:"Battery", attack:6, defend:12, health: 260, multiply: 1.5}};
+				 "four": {name:"Battery", attack:6, defend:12, health: 290, multiply: 1.5}};
 var state = {
 		damageValue: function(y, z, g, h, j, k, m, n){
 		if (locked === false){
