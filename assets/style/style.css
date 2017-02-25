@@ -1,10 +1,23 @@
 body {
-	background-image: url("../images/block7.png");
-	background-size: 60px;
+	background-image: url("../images/simpleblock2.png"), url("../images/redwave.png");
+	background-color: black;
+	background-size: 50px;
+	font-family: "Monoton";
 }
 .arena {
-	background-color: white;
-	margin: 10px auto
+	background-color: black;
+	color: white;
+	margin: 10px auto;
+	height: 430px;
+	border:#36ff00 solid 6px;
+	box-shadow: 0 0 0 5px white;
+}
+#functions {
+	margin: 20px auto;
+	background-size: 90px;
+	background-image: url("../images/line.png") , url("../images/redwave.png");
+	background-color: black;
+	box-shadow: 0 0 0 5px white;
 }
 .btn:hover, .btn:focus{
 	border: 2px solid white;
@@ -16,34 +29,27 @@ body {
 	box-shadow: 0 0 0 5px red;
 }
 .bar {
-	background-image: url("../images/line.png"), url("../images/block7.png");
+	background-image:url("../images/redwave.png"), url("../images/line.png"), url("../images/block7.png");
 	background-size: contain;
 	border: 6px solid #36ff00;
 	display: flex;
 	justify-content: space-between;
 	padding: 15px;
-}
-.bar2 {
-	background-image: url("../images/block5.png");
-	background-size: contain;
-	border: 6px solid #36ff00;
-	margin: 10px auto;
-	display: flex;
-	justify-content: space-between;
-	padding: 15px;
+	box-shadow: 0 0 0 6px white;
 }
 .options {
-	background-image: url("../images/block5.png");
+	background-image: url("../images/redwave.png");
 	background-size: inherit;
 	padding: 10px 10px;
 	border: 6px solid #36ff00;
+	box-shadow: 0 0 0 6px white;
 }
 .player {
 	margin: 10px 10px;
 	box-shadow: 0 0 0 6px #36ff00;
 	background-image: url("../images/block7.png");
 	background-size: inherit;
-	font-size: 40px;
+	font-size: 30px;
 	padding: 5px 5px;
 	color: white;
 	text-shadow: 1px 1px 4px green; 
@@ -51,21 +57,37 @@ body {
 }
 .operators {
 	background-image: url("../images/block7.png");
-	background-size: contain;
-	font-size: 40px;
+	background-size: 40px;
+	font-size: 26px;
 	color: white;
 	box-shadow: 0 0 0 6px #36ff00;
 	border: 6px solid white;
 }
-.spot {
-	margin: 10px 10px;
+.spot, .spot2 {
+	background-image:url("../images/simpleblock2.png");
+	background-color: black;
+	background-size: 60px;
+	margin: 10px 20px;
 	width: 45%;
 	float: left;
 	font-size: 30px;
+	height: 230px;
+	box-shadow: 0 0 0 6px white;
+	border: 6px solid #36ff00;
 }
 .spot2 {
-	margin:10px 10px;
-	width: 45%;
 	float: right;
-	font-size: 30px;
+}
+.results {
+	background-image:url("../images/redwave.png"), url("../images/line.png"), url("../images/block7.png");
+	height: 70px;
+	box-shadow: 0 0 0 6px white;
+	border: 6px solid #36ff00;
+	margin-top: -65px;
+}
+#victor {
+	position: relative;
+	left: 43%;
+	color: white;
+	font-size: 40px;
 }

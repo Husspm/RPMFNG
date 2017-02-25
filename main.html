@@ -6,8 +6,7 @@
 	<!--<script src="logic.js"></script>-->
 	<script src="assets/javascript/logic.js"></script>
     <!-- Added a link to Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	 <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"><link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
 	<link rel ="stylesheet" href="assets/style/style.css">
 	<link rel ="icon" href="assets/images/MyLogo2.png">
 	<title>RPG</title>
@@ -15,26 +14,30 @@
 <body>
 	<div class="container-fluid bar">
 		<div class = "container-fluid options">
-			<button id ="select" class = "btn btn-large player">Player One</button>
-			<button id ="select2" class = "btn 	btn-large player">Player Two</button>	
-			<button id ="select3" class = "btn 	btn-large player">Player Three</button>
-			<button id ="select4" class = "btn 	btn-large player">Player Four</button>
+			<button id ="select" class = "btn btn-large player">Memory
+			</button>
+			<button id ="select2" class = "btn 	btn-large player">Resistor</button>	
+			<button id ="select3" class = "btn 	btn-large player">Capacitor</button>
+			<button id ="select4" class = "btn 	btn-large player">Battery</button>
 		</div>
 	</div>	
-	<div class = "container bar2">	
+	<div id="functions" class = "container bar">	
 		<button id ="creator" class="btn btn-large operators">RESET</button>
-		<button id ="deletor" class = "btn btn-large operators">Attack</button>
+		<button id ="deletor" class = "btn btn-large operators">Run</button>
 	</div>
 <div class="container">
 	<div class="row arena">
-	<h1 class = "text-center operators">Results show up here for now</h1>
-		<div class = "spot">
+	<h1 class = "text-center">This is where the results print</h1>
+		<div class = "spot"><span class = "name"></span>
 		<div id="play"></div>
 		</div>
-		<div class = "spot2">
+		<div class = "spot2"><span class ="name2"></span>
 		<div id="opponent"></div>
 		</div>
 	</div>
 </div>
+	<div class = "container-fluid text- center results">
+		<span id="victor" class = "text-center"></span>
+	</div>	
 </body>
 </html>
